@@ -1,0 +1,38 @@
+  .flex{
+    display:flex;
+    font-size: 16px;
+    padding:15px;
+    align-items: center
+
+  }
+  .border{
+    border:1px solid #eee;
+  }
+  pi-Fitem{
+    padding:10px;
+   }
+// .flex .vertical{
+//     border:none;
+//     height: 300px;
+//   }
+
+// .flex div:nth-child(odd){
+//     background: #ededed;
+//     width: 100px;
+//     height: 50px;
+//     align-items: center;
+//     justify-content: center;
+//     display: flex;
+//   }
+  
+
+// .flex.vertical div{
+//     width: 100%;
+//   }
+
+// .flex .vertical .flexitem{
+//     background: #ddd;
+//     align-items: center;
+//     justify-content: center;
+//     display: flex;
+//   }

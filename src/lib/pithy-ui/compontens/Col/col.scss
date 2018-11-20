@@ -1,0 +1,14 @@
+.pi-col {
+  box-sizing: border-box;
+  overflow: hidden;
+
+  @for $i from 1 through 24 {
+    &.span-#{$i} {
+      width: (100/24*$i)#{'%'};
+    }
+
+    &.offset-#{$i} {
+      margin-left: (100/24*$i)#{'%'};
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import 'theme';
+
+// 栅格内容
+.pi-grid {
+  width: 100%;
+  height: 100%;
+}
+
+
+// 背景颜色
+.bg-primary{
+  background: $--color-primary;
+}
+.bg-success{
+  background: $--color-success;
+}
+.bg-warning{
+  background: $--color-warning;
+}
+.bg-danger{
+  background: $--color-danger;
+}
+.bg-info{
+  background: $--color-info;
+}
+.bg-purple{
+  background: #d3dce6;
+}
+.bg-purple-dark{
+  background: #99a9bf;
+}
+.bg-purple-light{
+  background: #e5e9f2;
+}
+
+

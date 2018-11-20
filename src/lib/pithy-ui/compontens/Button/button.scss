@@ -1,0 +1,265 @@
+
+// 默认按钮样式
+.pi-btn{
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    border-color: #dcdfe6;
+    color: #606266;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    transition: .1s;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+//i 图标样式
+.pi-btn i{
+    margin-right: 7px;
+ }
+
+
+
+//primary 主键按钮样式
+.primary{
+    color: #fff !important;
+    background-color: #6fb1f3 !important;
+    border-color: #409eff !important;
+}
+.primary:hover{
+    color: #fff !important;
+    background-color: #96c4ee !important;
+    border-color: #70b2f5 !important;
+}
+
+//info 信息按钮样式
+.info{
+    color: #fff;
+    background: #909399;
+    border-color: #d3d4d6;
+}  
+.info:hover{
+    color: #fff;
+    background: #909399;
+    border-color: #d3d4d6;
+}  
+.is-plain{
+    color: #909399;
+    background: #f4f4f5;
+    border-color: #d3d4d6;
+}
+
+// warning 警告按钮样式
+.warning{
+    color: #e6a23c;
+    background: #fdf6ec;
+    border-color: #f5dab1;
+}
+.warning:hover{
+    color: #fff;
+    background: #6bd812;
+    border-color: #d3d4d6;
+}  
+
+// danger 危险按钮样式
+.danger{
+    color: #f56c6c;
+    background: #fef0f0;
+    border-color: #fbc4c4;
+  
+}
+.danger:hover{
+    color: #fff;
+    background-color: #f56c6c;
+    border-color: #f56c6c;
+}  
+
+// radius  圆角
+.is-radius{
+    border-radius: 20px;
+    padding: 12px 23px;
+ }
+
+//两边拉开
+.around-btn:before {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.around-btn:before {
+    width: 0%;
+    height: 103%;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+}
+.around-btn:hover:before {
+	width: 100%;
+    opacity: 1;
+   
+}
+.around-btn:hover  .aft-font{
+    color: #1BB5F1;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+//倾斜
+.lean-btn:before {
+    content:'';
+    width: 100%;
+    height: 0px;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.3s;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.lean-btn:hover:before {
+    height:190px;
+
+}
+.lean-btn:hover .aft-font{
+    color: #1BB5F1 !important;
+    position: relative;
+    z-index: 40 !important;
+}
+
+
+// 下滑
+.top-btn:after {
+    content: '';
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    transition: all 0.3s;
+}
+.top-btn:hover:after {
+    content: '';
+    height:100%;
+    z-index: 1;
+}
+
+.top-btn:hover .aft-font{
+    color: #1BB5F1 !important;
+    position: relative;
+    z-index: 40 !important;
+}
+
+
+//左滑
+
+.left-btn:after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.left-btn:hover:after {
+    content: '';
+    width:100%;
+    z-index: 2;
+}
+.left-btn:hover .aft-font{
+    color: #1BB5F1 !important;
+    position: relative;
+    z-index: 40 !important;
+}
+
+
+//中间拉开
+.middle-btn:after {
+    content: '';
+    width: 101%;
+    height: 1%;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.3s;
+}
+.middle-btn:hover:after {
+    content: '';
+    height:100%;
+    z-index: 1;
+    opacity: 1;
+}
+.middle-btn:hover .aft-font{
+    color: #1BB5F1 !important;
+    position: relative;
+    z-index: 40 !important;
+}
+
+
+//btn 基框 
+
+
+.top-btn,.lean-btn, .around-btn,.middle-btn,.left-btn{
+    border: 3px solid #fff;
+    color: #000;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 20px 29px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    overflow: hidden;
+
+.aft-font{
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+button {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    -o-border-image: initial;
+    border-image: initial;
+    text-rendering: auto;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    font: 400 13.3333px Arial;
+}
+
+button {
+    -webkit-appearance: button;
+}
+}
+

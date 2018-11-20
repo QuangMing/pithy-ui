@@ -1,0 +1,25 @@
+
+//pi-table表格基框
+.pi-table{
+    min-width:650px;
+    height:auto;
+    // background:red;
+    margin: 0px auto;
+    display:flex; 
+    border-collapse: collapse;
+    .pi-cloumn{
+       display: flex;
+       flex-flow: column;
+       justify-content: center;
+       th{
+           margin:0px auto;
+       }
+       tbody>tr>td{
+           padding:18px 30px;
+           border:1px solid #000; 
+       }
+       tbody>.thead>td{
+        border: none;
+             }
+    }  
+}
